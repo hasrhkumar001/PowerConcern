@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Product - PowerConcern</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body> 
+    <div class="header">
+    <div class="container">
+    
+        <div class="navbar">
+        
+            <div class="logo">
+           <a href="index.html"><img src="photos/main logo.png" width="125px" alt="logo"></a>
+            </div>
+        <nav>
+            <ul id="menuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+       <a href="cart.html"> <img src="photos/icons8-shopping-trolley-64.png" width="30px" height="30px" alt=""></a>
+        <img src="photos/menuicon.png" width="30px" height="30px" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+       
+    <!---Single Products Details-->
+    <div class="small_container single-products">
+        <div class="row">
+            <div class="col-2">
+                <img src="photos/bigmuscle shredz pw.webp" width="100px" height="300px" id="product-img">
+               
+
+
+            </div>
+            <div class="col-2">
+                <p>Home / Pre-Workout</p>
+                <h1>Bigmuscles Shredz Pre-Workout</h1>
+                <h4>₹519</h4> 
+                <select name="" id="">
+                    <option value="">Select Wieght</option>
+                    <option value="">1 Kg</option>
+                    <option value="">2 Kg</option>
+                    <option value="">3 Kg</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add to Cart</a>
+                <h3>Product Details</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos modi error doloribus sapiente at aut sit libero offici</p>
+            </div>
+        </div>
+    </div>
+    <div class="small_container">
+        <div class=" row row-2">
+            <h2>Related Prodcuts</h2>
+            <a href="products.html"><p>View more</p></a>
+        </div>
+    </div>
+    <div class="small_container">
+       
+        <div class="row">
+            <div class="col-4">
+                <img src="photos/fast&up pw.webp" width="auto">
+                <h4>Frotien </h4>
+               
+                <p>₹1299</p>
+            </div>
+            <div class="col-4">
+                <a href="fortienProductDetail.html"><img src="photos/frotien.webp" width="auto"></a>
+                <a href="fortienProductDetail.html"><h4>Bigmuscles Shredz PreWorkout </h4></a>
+                
+                <p>₹1599</p>
+            </div>
+            <div class="col-4">
+                <a href="bigMusMultiVitaProductDetail.html"><img src="photos/bigmuscles mv.webp" width="auto"></a>
+                <a href="bigMusMultiVitaProductDetail.html"><h4>Bigmuscles Multivitamin </h4></a>
+                
+                <p>₹299</p>
+            </div>
+            <div class="col-4">
+                <img src="photos/doctorchoice pw.webp" width="auto">
+                <h4>Doctor Choice Ripped-X5 PreWorkout </h4>
+                
+                <p>₹699</p>
+            </div>
+            
+        </div>
+        
+            
+        </div>
+    </div>
+    </div>
+    
+    <!---Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and Ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="photos/app-store-png-logo-33116.png" alt="">
+                        <img src="photos/google-play-png-logo-3799.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="index.html"><img src="photos/main logo-modified.png" alt=""></a>
+                    <p>Think healthy first! Eat smart for a healthy heart! Eat healthy, live long, live strong!</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefill Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2022 Ecommerce. All rights reserved</p>
+        </div>
+    </div>
+
+    <!----js for toggle menu-->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(menuItems.style.maxHeight == "0px"){
+                menuItems.style.maxHeight = "200px";
+            }
+            else{
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!----pjs for product galery---->
+    <script>
+        var productImg =document.getElementById(product-img);
+        var smallImg = document.getElementsByClassName(small-img);
+        smallImg[0].onclick = function(){
+            productImg.src = smallImg[0].src;
+        } 
+        smallImg[1].onclick = function(){
+            productImg.src = smallImg[1].src;
+        } 
+        smallImg[2].onclick = function(){
+            productImg.src = smallImg[2].src;
+        }
+
+
+    </script>
+
+</body>
+</html>
